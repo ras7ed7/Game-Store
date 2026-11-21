@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر Warframe - ألعاب الفضاء المتميزة</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-controller"></i> Warframe Store
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#games">الألعاب</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offers">العروض</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">اتصل بنا</a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex ms-3">
+                    <!-- زر سلة التسوق مع عداد -->
+                    <button class="btn btn-outline-accent position-relative" data-bs-toggle="modal" data-bs-target="#cartModal" id="cartBtn">
+                        <i class="bi bi-cart3"></i>
+                        <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger" id="cartCount">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="floating">متجر Warframe للألعاب المتميزة</h1>
+                    <p class="lead">
+                        اكتشف عالمًا من الألعاب الاستثنائية في متجرنا الفريد. نقدم لك أفضل الألعاب بتصميمات مبتكرة وعروض حصرية.
+                        <span class="math-fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">2</span>
+                        </span>
+                        ×
+                        <span class="math-fraction">
+                            <span class="numerator">3</span>
+                            <span class="denominator">4</span>
+                        </span>
+                        =
+                        <span class="math-fraction">
+                            <span class="numerator">5</span>
+                            <span class="denominator">8</span>
+                        </span>
+                    </p>
+                    <div class="mt-4">
+                        <a href="#games" class="btn btn-lg me-3 explore-btn">استكشف الألعاب</a>
+                        <a href="#offers" class="btn btn-lg btn-outline-light">العروض الحصرية</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <div class="special-offer">
+                            <h3 class="text-warning">لعبة Warframe الإصدار الذهبي</h3>
+                            <p class="my-3">احصل على الإصدار الذهبي من لعبة Warframe مع جميع المحتويات الإضافية وحزمة المعدات الحصرية.</p>
+                            <h2 class="text-warning">خصم 40%</h2>
+                            <p class="text-muted">السعر الأصلي: <del>249 ريال</del></p>
+                            <h4 class="text-light">السعر بعد الخصم: 149 ريال فقط</h4>
+                            <button class="btn btn-warning mt-3 px-4 py-2 buy-now-btn">اشتري الآن</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="py-5">
+        <div class="container">
+            <div class="section-header">
+                <h2>ألعابنا المميزة</h2>
+            </div>
+            
+            <div class="row" id="games-container">
+                <!-- سيتم إضافة الألعاب ديناميكيًا بواسطة JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section id="offers" class="py-5 offers-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>عروضنا الحصرية</h2>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="p-4">
+                        <h3 class="text-accent mb-4">خصومات تصل إلى 60% على باقات الألعاب</h3>
+                        <p class="mb-4">احصل على أفضل العروض على الباقات الحصرية من الألعاب. اشترِ مجموعة من الألعاب ووفر أكثر!</p>
+                        
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="math-fraction me-3">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div>
+                            <div>
+                                <h5 class="text-warning">خصم 50% على باقة Warframe الكاملة</h5>
+                                <p class="mb-0">احصل على جميع محتويات Warframe الإضافية بنصف السعر.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="math-fraction me-3">
+                                <span class="numerator">3</span>
+                                <span class="denominator">4</span>
+                            </div>
+                            <div>
+                                <h5 class="text-warning">خصم 75% على الألعاب القديمة</h5>
+                                <p class="mb-0">خصم هائل على مجموعة مختارة من الألعاب الكلاسيكية.</p>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-lg mt-3 explore-offers-btn">استعرض جميع العروض</button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="p-4 text-center">
+                        <div class="special-offer floating">
+                            <h3 class="text-warning mb-3">باقة الألعاب الذهبية</h3>
+                            <p class="mb-4">احصل على 5 ألعاب مميزة بسعر لعبتين فقط! تتضمن الباقة ألعاب Warframe وSpace Breaker وCyber Nexus والمزيد.</p>
+                            <h2 class="text-warning mb-3">وفر 299 ريال</h2>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="me-4">
+                                    <h5 class="text-muted">السعر الأصلي:</h5>
+                                    <h4><del>698 ريال</del></h4>
+                                </div>
+                                <div>
+                                    <h5 class="text-light">السعر النهائي:</h5>
+                                    <h3 class="text-warning">399 ريال فقط</h3>
+                                </div>
+                            </div>
+                            <button class="btn btn-warning btn-lg mt-4 px-5 bundle-btn">اشتري الباقة</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>متجر Warframe للألعاب</h5>
+                    <p>نقدم لكم أفضل الألعاب الإلكترونية بتصاميم فريدة وعروض حصرية. نحن نؤمن بأن كل لاعب يستحق تجربة استثنائية.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>روابط سريعة</h5>
+                    <div class="footer-links">
+                        <a href="#home">الرئيسية</a>
+                        <a href="#games">الألعاب</a>
+                        <a href="#offers">العروض</a>
+                        <a href="#about">من نحن</a>
+                        <a href="#contact">اتصل بنا</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>اتصل بنا</h5>
+                    <div class="footer-links">
+                        <a href="#"><i class="bi bi-geo-alt me-2"></i> الرياض، المملكة العربية السعودية</a>
+                        <a href="#"><i class="bi bi-telephone me-2"></i> +966 500 000 000</a>
+                        <a href="#"><i class="bi bi-envelope me-2"></i> info@warframe-store.com</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة © <span id="current-year">2023</span> متجر Warframe للألعاب</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal سلة التسوق -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">
+                        <i class="bi bi-cart3 me-2"></i>سلة التسوق
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cart-items-container">
+                        <div class="text-center py-5" id="empty-cart-message">
+                            <i class="bi bi-cart-x display-1 text-muted"></i>
+                            <h5 class="mt-3">سلة التسوق فارغة</h5>
+                            <p class="text-muted">أضف بعض الألعاب إلى السلة لتبدأ التسوق</p>
+                        </div>
+                    </div>
+                    <div class="cart-summary mt-4 d-none" id="cart-summary">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5>المجموع الفرعي:</h5>
+                            <h5 id="subtotal">0 ريال</h5>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h5>الخصم:</h5>
+                            <h5 class="text-success" id="discount">0 ريال</h5>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4>المجموع النهائي:</h4>
+                            <h3 class="text-warning" id="total">0 ريال</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">متابعة التسوق</button>
+                    <button type="button" class="btn btn-success" id="checkout-btn" disabled>إتمام الشراء</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
